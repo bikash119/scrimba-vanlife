@@ -1,8 +1,12 @@
 import { useState } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route,Link } from 'react-router'
-import { About, Home } from './App.jsx'
+import Home from './pages/Home'
+import About from './pages/About'
+import Vans from './pages/Vans'
 import './App.css'
+import "./server"
+
 
 
 function App() {
@@ -21,6 +25,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/vans" element={<Vans />} />
       </Routes>
     </BrowserRouter>
   )
