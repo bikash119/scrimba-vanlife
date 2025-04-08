@@ -1,8 +1,11 @@
 import Badge from "../Badge/Badge"
 import { Link } from "react-router"
 export default function Card(props) {
+    const filter = props.linkState.filter
     return (
-        <Link to={`/vans/${props.id}`} className="card">
+        <Link to={`${props.id}`} 
+        state={{filter}}
+        className="card">
             <div className="card">
                 <div className="card-image">
                     <img src={props.imageUrl} alt={props.name} />

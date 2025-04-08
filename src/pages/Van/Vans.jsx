@@ -16,7 +16,7 @@ export default function Vans() {
     const vanElements = vans
       .filter(van => typeFilter ? van.type === typeFilter : true)
       .map(van => (
-          <Card key={van.id} {...van} />
+          <Card key={van.id} {...van} linkState={{filter:searchParams.toString()}} />
       ))
     return (
       <main>
