@@ -86,7 +86,6 @@ createServer({
         })
         this.get("/host/vans/:id", (schema, request) => {
             const id = request.params.id
-            console.log(id)
             return schema.vans.where({hostId: "123", id})
         })
     }
