@@ -13,6 +13,10 @@ body{
   padding: 0;
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+  color: #000000;
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -204,7 +208,24 @@ nav > div:nth-child(2){
   text-transform: capitalize;
 }
 
-
+.host-van-card{
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 0.35rem;
+}
+.host-van-card-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.host-van-detail-layout{
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 0.35rem;
+}
 
 footer{
   display: flex;
