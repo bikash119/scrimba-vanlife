@@ -20,7 +20,6 @@ export default function About() {
             <Button className="about-page-cta-button">Explore our vans</Button>
           </section>
         </main>
-        <Footer />
       </>
     )
   }

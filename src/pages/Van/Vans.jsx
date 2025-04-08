@@ -1,5 +1,5 @@
 import { useState,useEffect } from 'react'
-import Card from '../components/Card/Card'
+import Card from '../../components/Card/Card'
 
 export default function Vans() {
     const [vans,setVans] = useState([])
@@ -9,7 +9,6 @@ export default function Vans() {
         setVans(data.vans)
     })();},[])
     
-    console.log(vans)
     const vanElements = vans.map(van => (
         <Card key={van.id} {...van} />
     ))

@@ -14,7 +14,6 @@ export default function Home() {
             <Button className="home-page-button">Find your van</Button>
           </section>
         </main>
-        <Footer />
       </>
     )
   }
